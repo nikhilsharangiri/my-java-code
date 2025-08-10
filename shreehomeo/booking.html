@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book an Appointment | Shreehomeo</title>
+  <meta name="description" content="Book your appointment at Shreehomeo Homeopathy Clinic." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html#home" aria-label="Shreehomeo home">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">Shreehomeo</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" role="navigation">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+        </ul>
+      </nav>
+      <a class="btn cta" href="booking.html" aria-current="page">Book</a>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="section hero compact" aria-label="Booking">
+      <div class="container">
+        <h1>Book an Appointment</h1>
+        <p>Fill out the form and we’ll contact you to confirm your appointment.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Appointment form">
+      <div class="container grid two-col">
+        <form class="contact-form" name="booking" id="booking-form">
+          <div class="form-row">
+            <label for="b-name">Full Name</label>
+            <input id="b-name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="form-row">
+            <label for="b-email">Email</label>
+            <input id="b-email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="b-phone">Phone Number</label>
+            <input id="b-phone" name="phone" type="tel" placeholder="123456" required />
+          </div>
+          <div class="form-row">
+            <label for="b-date">Preferred Date</label>
+            <input id="b-date" name="date" type="date" required />
+          </div>
+          <div class="form-row">
+            <label for="b-time">Preferred Time</label>
+            <input id="b-time" name="time" type="time" />
+          </div>
+          <fieldset class="form-row">
+            <legend>Mode</legend>
+            <label class="inline">
+              <input type="radio" name="mode" value="In-clinic" checked /> In-clinic
+            </label>
+            <label class="inline">
+              <input type="radio" name="mode" value="Online" /> Online
+            </label>
+          </fieldset>
+          <div class="form-row">
+            <label for="b-message">Reason / Notes</label>
+            <textarea id="b-message" name="message" rows="4" placeholder="Briefly describe your concern"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn cta">Request Booking</button>
+            <a class="btn ghost" href="index.html#contact">Back to Contact</a>
+          </div>
+          <p class="form-hint">Prefer calling? <a href="tel:123456">123456</a> · <a href="mailto:hi@gmail.com">hi@gmail.com</a></p>
+        </form>
+
+        <aside>
+          <div class="card">
+            <h3>Your Visit</h3>
+            <ul class="checklist">
+              <li>Consultation: 30–45 minutes for new patients</li>
+              <li>Bring previous reports (if any)</li>
+              <li>Follow-up plan tailored to your needs</li>
+            </ul>
+          </div>
+          <div class="card mt-16">
+            <h3>Clinic</h3>
+            <p><strong>Address</strong>: Balasore, Odisha</p>
+            <p><strong>Hours</strong>: Mon–Sat: 9 AM – 6 PM</p>
+            <a class="text-link" href="https://www.google.com/maps?q=Balasore%2C%20Odisha" target="_blank" rel="noopener">Open in Maps</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shreehomeo. All rights reserved.</p>
+      <a class="text-link" href="index.html#home">Back to Home</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
